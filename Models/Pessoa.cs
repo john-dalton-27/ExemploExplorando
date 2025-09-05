@@ -7,12 +7,51 @@ namespace ExemploExplorando.Models
 {
     public class  Pessoa
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        private string _nome;
+        public string Nome 
+        {
+            /* get
+            {
+                 return _nome.ToUpper();
+            } */
+            get => _nome.ToUpper(); // Usando body expression para simplificar o getter
+            set
+            { 
+                if(value == "")
+                {
+                    throw new ArgumentException("O nome não pode ser vazio.");
+                }
+
+                _nome = value;
+            }
+        }
+
+        public string Sobrenome { get; set; }
+
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
+        private int _idade;
+        public int Idade 
+        {
+            /*get
+            {
+                return _idade;
+            }*/
+            get => _idade;
+
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser negativa.");
+                }
+                _idade = value;
+            }
+        }
 
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.");
         }
     }
 }

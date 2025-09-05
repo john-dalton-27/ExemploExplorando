@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# Projects\\.NET - DIO\\exemplo-explorando\\exemplo-explorando.csproj",
-      "projectName": "exemplo-explorando",
-      "projectPath": "D:\\C# Projects\\.NET - DIO\\exemplo-explorando\\exemplo-explorando.csproj",
+      "projectUniqueName": "D:\\C# Projects\\.NET - DIO\\ExemploExplorando\\ExemploExplorando.csproj",
+      "projectName": "ExemploExplorando",
+      "projectPath": "D:\\C# Projects\\.NET - DIO\\ExemploExplorando\\ExemploExplorando.csproj",
       "packagesPath": "C:\\Users\\jd294\\.nuget\\packages\\",
-      "outputPath": "D:\\C# Projects\\.NET - DIO\\exemplo-explorando\\obj\\",
+      "outputPath": "D:\\C# Projects\\.NET - DIO\\ExemploExplorando\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
